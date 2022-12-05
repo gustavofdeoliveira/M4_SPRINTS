@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+
+  <title>GUSTAVO FERREIRA - JOKEPO</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body translate="no">
+  <div class="start" id="start">
+    <h1>Pressione alguma tecla para começar</h1>
+  </div>
+  <div class="container">
+    <div class="questions">
+      <div id="question-n1" class="question active">
+        <div class="div-container">
+          <h1>Jogador 1 - Selecione a sua jogada</h1>
+          <h3>Digite no teclado:</h3>
+          <div class="d-flex instructions" >
+            <h3>1 - Pedra</h3>
+            <h3>2 - Papel</h3>
+            <h3>3 - Tesoura</h3>
+          </div>
+          <div id="instrucoes-player-one"></div>
+          <div class="d-flex align-itens-center">
+            <input class="you" id="you-1" name="you" value="pedra" type="radio" onclick="gamePlayerOne(this.value)">
+
+            <input class="you" id="you-2" name="you" value="papel" type="radio" onclick="gamePlayerOne(this.value)">
+            <input class="you" id="you-3" name="you" value="tesoura" type="radio" onclick="gamePlayerOne(this.value)">
+            <div class="options">
+              <label class="r" for="you-1"></label>
+              <label class="p" for="you-2"></label>
+              <label class="s" for="you-3"></label>
+            </div>
+            <div class="game game1" onclick="goToNextQuestion()">
+              <div class="go">
+                <label for="skynet-1"></label>
+                <label for="skynet-2"></label>
+                <label for="skynet-3"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="question-n2" class="question">
+        <div class="div-container">
+          <h1>Jogador 2 - Selecione a sua jogada</h1>
+          <div class="d-flex instructions">
+            <h3>1 - Pedra</h3>
+            <h3>2 - Papel</h3>
+            <h3>3 - Tesoura</h3>
+          </div>
+          <div id="instrucoes-player-two"></div>
+          <div class="d-flex align-itens-center">
+            <input class="youu" id="youu-1" name="youu" type="radio" value="pedra" type="radio"
+              onclick="gamePlayerTwo(this.value)">
+
+            <input class="youu" id="youu-2" name="youu" type="radio" value="papel" type="radio"
+              onclick="gamePlayerTwo(this.value)">
+            <input class="youu" id="youu-3" name="youu" type="radio" value="tesoura" type="radio"
+              onclick="gamePlayerTwo(this.value)">
+            <input class="skynet" id="player-1" name="player" type="radio">
+            <input class="skynet" id="player-2" name="player" type="radio">
+            <input class="skynet" id="player-3" name="player" type="radio">
+            <div class="options">
+              <label class="r" for="youu-1"></label>
+              <label class="p" for="youu-2"></label>
+              <label class="s" for="youu-3"></label>
+            </div>
+            <div class="game" onclick="goToNextQuestion()">
+              <div class="go">
+                <label for="player-1"></label>
+                <label for="player-2"></label>
+                <label for="player-3"></label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="question-n3" class="question">
+        <div class="div-container">
+          <div class="results" id="results">
+            <h1>Ganhador</h1>
+            <div id="win" class="win">
+              Win
+            </div>
+            <div id="lose" class="lose">
+              Lose
+            </div>
+            <div id="tie" class="tie">
+              Tie
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
