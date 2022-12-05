@@ -1,3 +1,5 @@
+Link do video - https://drive.google.com/file/d/1lJFAMW7RhRAGrrsKXbYOWIJu8j9UASre/view?usp=share_link;
+<br>
 Unificando os autoestudos de Construção de endpoints embarcados e a Revisão com Node.js:
 
 - Crie um Game que permita 2 jogadores interagirem com o ESP32. 
