@@ -1,5 +1,5 @@
 Unificando os autoestudos de Construção de endpoints embarcados e a Revisão com Node.js:
-
+Link do video - https://drive.google.com/file/d/1lJFAMW7RhRAGrrsKXbYOWIJu8j9UASre/view?usp=share_link;
 - Crie um Game que permita 2 jogadores interagirem com o ESP32. 
 - Os jogadores devem interagir através de um dispositivo(seja celular ou computador) utilizando uma página WEB. 
 - O ESP deve acionar algum atuador indicando o final do game, por exemplo, disparando um motor ou acendendo uma lâmpada via relês
